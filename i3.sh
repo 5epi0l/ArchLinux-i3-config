@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "[+] Installing packages"
-sudo pacman -S polybar feh python-pywal picom rofi dunst ly alacritty xsessions xauth zig pam xorg xorg-xauth brightnessctl
+sudo pacman -S polybar feh python-pywal picom rofi dunst ly alacritty xsessions xauth zig pam xorg xorg-xauth brightnessctl nemo
 
 echo "\n[+] cloning the config repo"
 cd /opt && git clone https://github.com/5epi0l/ArchLinux-i3-config.git

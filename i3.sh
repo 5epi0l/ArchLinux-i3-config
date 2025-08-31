@@ -24,3 +24,6 @@ sudo cp /opt/ArchLinux-i3-config/config.ini /etc/ly/
 
 sudo systemctl disable lightdm && sudo systemctl enable ly
 
+echo "\n[+] rebooting"
+reboot
+

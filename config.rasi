@@ -1,0 +1,7 @@
+configuration {
+  modi: "drun,run";
+  show-icons: true;
+  sidebar-mode: false;
+}
+@theme "Arc-Dark"
+

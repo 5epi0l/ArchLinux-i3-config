@@ -1,0 +1,103 @@
+# Use Super (Windows key) as modifier
+set $mod Mod1
+
+# Font
+font pango:Hack Nerd Font 12
+
+# Terminal
+bindsym $mod+Return exec alacritty
+
+# Application launcher (Rofi)
+bindsym $mod+r exec rofi -show drun
+
+# Reload i3 config
+bindsym $mod+Shift+r restart
+bindsym $mod+q kill
+# Exit i3
+bindsym $mod+Shift+e exec "i3-msg exit"
+
+# Window navigation (vim-style)
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move windows (vim-style)
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+v split v
+bindsym $mod+b split h
+
+# browser
+bindsym $mod+w exec "firefox"
+
+#spotify
+bindsym $mod+m exec "spotify"
+
+#filemanager
+bindsym $mod+n exec "nemo"
+
+#discord
+bindsym $mod+d exec "/opt/Discord/Discord"
+
+#sublime-text
+bindsym $mod+s exec "subl"
+
+#shutdown
+bindsym $mod+g exec "shutdown now"
+
+#reboot
+bindsym $mod+p exec "reboot"
+
+# Fullscreen toggle
+bindsym $mod+f fullscreen toggle
+
+#Gaps
+
+gaps inner 8px
+gaps outer 8px
+
+default_border pixel 1px
+default_floating_border pixel 1px
+# Floating modifier
+floating_modifier $mod
+
+# Workspaces
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+
+# Autostart: Wallpaper
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/manga.png
+# Autostart: 180 Hz script
+exec_always --no-startup-id ~/.xrandr-180hz.sh
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+exec_always --no-startup-id wal -R
+exec_always --no-startup-id wal -i ~/Pictures/Wallpapers/manga.png
+exec_always  ~/.config/polybar/launch.sh &
+# Status bar
+
+#bar {
+#	font pango:Hack Nerd Font 10
+#	position top
+#	status_command /usr/bin/bumblebee-status -m cpu memory \
+#       pasink pasource -p time.format="%H:%M" -t iceberg-dark-powerline
+	
+#}

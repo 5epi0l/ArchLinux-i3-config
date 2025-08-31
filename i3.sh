@@ -18,7 +18,7 @@ mkdir ~/.config/alacritty && cp /opt/ArchLinux-i3-config/alacritty.toml ~/.confi
 mkdir ~/.config/picom && cp /opt/ArchLinux-i3-config/picom.conf ~/.config/picom/
 mkdir ~/.config/polybar && cp /opt/ArchLinux-i3-config/config.polybar.ini ~/.config/polybar/config.ini
 
-cp /opt/ArchLinux-i3-config/launch.sh ~/.config/polybar/
+cp /opt/ArchLinux-i3-config/launch.sh ~/.config/polybar/ && chmod +x ~/.config/polybar/launch.sh
 
 sudo cp /opt/ArchLinux-i3-config/config.ini /etc/ly/
 

@@ -4,7 +4,7 @@ echo "[+] Installing packages"
 sudo pacman -S polybar feh python-pywal picom rofi dunst ly alacritty xsessions xauth zig pam xorg xorg-xauth brightnessctl nemo
 
 echo "\n[+] cloning the config repo"
-cd /opt && git clone https://github.com/5epi0l/ArchLinux-i3-config.git
+cd /opt && sudo git clone https://github.com/5epi0l/ArchLinux-i3-config.git
 
 echo "\n[+] Downloading Hack Nerd Font"
 wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.zip" -O ~/Downloads/Hack.zip && sudo unzip ~/Downloads/Hack.zip -d /usr/share/fonts/TTF/

@@ -20,7 +20,7 @@ mkdir ~/.config/polybar && cp /opt/ArchLinux-i3-config/config.polybar.ini ~/.con
 
 cp /opt/ArchLinux-i3-config/launch.sh ~/.config/polybar/ && chmod +x ~/.config/polybar/launch.sh
 
-sudo cp /opt/ArchLinux-i3-config/config.ini /etc/ly/
+sudo mkdir /etc/ly && sudo cp /opt/ArchLinux-i3-config/config.ini /etc/ly/
 
 sudo systemctl disable lightdm && sudo systemctl enable ly
 

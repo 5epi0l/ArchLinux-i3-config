@@ -8,7 +8,7 @@ font pango:Hack Nerd Font 12
 bindsym $mod+Return exec alacritty
 
 # Application launcher (Rofi)
-bindsym $mod+r exec rofi -show drun
+bindsym $mod+r exec "~/.config/rofi/launchers/type-7/launcher.sh"
 
 # Reload i3 config
 bindsym $mod+Shift+r restart
@@ -45,11 +45,11 @@ bindsym $mod+d exec "/opt/Discord/Discord"
 #sublime-text
 bindsym $mod+s exec "subl"
 
-#shutdown
-bindsym $mod+g exec "shutdown now"
+#powermenu
+bindsym $mod+p exec "~/.config/rofi/powermenu/type-3/powermenu.sh"
 
-#reboot
-bindsym $mod+p exec "reboot"
+#screenshot
+bindsym $mod+g exec "~/.config/rofi/applets/bin/screenshot.sh"
 
 # Fullscreen toggle
 bindsym $mod+f fullscreen toggle

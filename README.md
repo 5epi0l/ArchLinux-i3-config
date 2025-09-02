@@ -7,7 +7,6 @@ curl https://raw.githubusercontent.com/5epi0l/ArchLinux-i3-config/refs/heads/mai
 
 ### Keybindings
 
-```shell
 1. Opening a terminal : alt + enter
 2. Opening firefox : alt + w
 3. Opening spotify (if installed) : alt + m
@@ -20,4 +19,7 @@ curl https://raw.githubusercontent.com/5epi0l/ArchLinux-i3-config/refs/heads/mai
 10. Moving windows around : alt + h,j,k,l
 11. Switching workspaces : alt + <workspace number>
 12. Moving windows between workspaces : alt + shift + <workspace number>
-``` 
+13. Opening Powermenu : alt + p
+14. opening screenshot menu : alt + g
+15. opening application launcher (rofi) : alt + r
+

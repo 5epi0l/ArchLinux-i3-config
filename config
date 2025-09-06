@@ -85,12 +85,12 @@ bindsym $mod+Shift+5 move container to workspace number 5
 bindsym $mod+Shift+6 move container to workspace number 6
 
 # Autostart: Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/manga.png
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/*
 # Autostart: 180 Hz script
 #exec_always --no-startup-id ~/.xrandr-180hz.sh
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec_always --no-startup-id wal -R
-exec_always --no-startup-id wal -i ~/Pictures/Wallpapers/manga.png
+exec_always --no-startup-id wal -i ~/Pictures/Wallpapers/*
 exec_always  ~/.config/polybar/launch.sh &
 # Status bar
 

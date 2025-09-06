@@ -4,6 +4,7 @@ echo "[+] Installing packages"
 sudo pacman -S polybar feh python-pywal picom rofi dunst ly alacritty xsessions xauth zig pam xorg xorg-xauth brightnessctl nemo maim xclip
 
 echo "[+] cloning the config repo"
+sudo chown $(whoami):$(whoami) /opt
 cd /opt && sudo git clone https://github.com/5epi0l/ArchLinux-i3-config.git
 
 echo "[+] Downloading Hack Nerd Font"
@@ -25,7 +26,6 @@ cp /opt/ArchLinux-i3-config/launch.sh ~/.config/polybar/ && chmod +x ~/.config/p
 sudo mkdir /etc/ly && sudo cp /opt/ArchLinux-i3-config/config.ini /etc/ly/
 
 sudo systemctl disable lightdm && sudo systemctl enable ly
-sudo chown $(whoami):$(whoami) /opt
 cd /opt &&  git clone --depth=1 https://github.com/adi1090x/rofi.git
 cd rofi && chmod +x setup.sh
 /opt/rofi/setup.sh

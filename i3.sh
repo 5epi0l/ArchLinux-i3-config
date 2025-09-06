@@ -25,6 +25,7 @@ cp /opt/ArchLinux-i3-config/launch.sh ~/.config/polybar/ && chmod +x ~/.config/p
 sudo mkdir /etc/ly && sudo cp /opt/ArchLinux-i3-config/config.ini /etc/ly/
 
 sudo systemctl disable lightdm && sudo systemctl enable ly
+sudo chown $(whoami):$(whoami) /opt
 cd /opt &&  git clone --depth=1 https://github.com/adi1090x/rofi.git
 cd rofi && chmod +x setup.sh
 /opt/rofi/setup.sh
